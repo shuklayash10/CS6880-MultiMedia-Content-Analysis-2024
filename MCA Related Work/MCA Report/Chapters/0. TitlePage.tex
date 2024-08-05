@@ -1,0 +1,90 @@
+\begin{titlepage}
+\centering
+
+\begin{tikzpicture}
+\node[inner sep=0pt] (logo) at (0,0)
+    {\includegraphics[width=.25\textwidth]{Images/IIT_Hyderabad.jpg}};
+\end{tikzpicture}
+
+\vspace{1cm}
+
+
+\begin{tikzpicture}
+\node[inner sep=0pt] (reportsubtitle1) at (0,0) {\sffamily\huge\textbf{ Indian Institute of Technology Hyderabad }};
+\gettikzxy{(reportsubtitle1.west)}{\subtitlex}{\subtitley}
+\gettikzxy{(reportsubtitle1.east)}{\titlex}{\titley}
+\end{tikzpicture}
+
+\vspace{2cm}
+
+
+
+\begin{tikzpicture}
+\node[inner sep=0pt,Tue-red] (reportsubtitle1) at (0,0) {\sffamily\huge\reportsubtitle};
+\gettikzxy{(reportsubtitle1.west)}{\subtitlex}{\subtitley}
+\gettikzxy{(reportsubtitle1.east)}{\titlex}{\titley}
+\end{tikzpicture}
+
+\vspace{2cm}
+
+\begin{tikzpicture}
+\node[inner sep=0pt] (logo) at (0,0){\sffamily\huge\assignmenttitle};
+\node[text width = 0.7\textwidth, right = of logo](title){\sffamily\huge\reportmaintitle};
+\gettikzxy{(title.south)}{\sffamily\subtitlex}{\subtitley}
+\gettikzxy{(title.north)}{\titlex}{\titley}
+\draw[line width=1mm, Tue-red]($(logo.east)!0.5!(title.west)$) + (0,\subtitley) -- +(0,\titley);
+\end{tikzpicture}
+% Authors
+\vspace{1cm}
+\sffamily\Large\textbf{Authors:}
+\sffamily Bhat Dittakavi\textsuperscript{1}, Vineeth N Balasubramanian\textsuperscript{2}, et al.
+
+
+
+% Paper Venture
+\vspace{0.5cm}
+\sffamily \Large \textbf{Paper Venue:}
+\sffamily \large WACV 2024 \\
+
+\vspace{1cm}
+
+% \sffamily\groupnumber
+
+\begin{table}[H]
+\centering
+\sffamily
+\large
+\begin{tabu} to 0.8\linewidth {cc}
+
+\textbf{Name} & \textbf{Roll Number}\\
+
+\hline
+
+\sffamily\reportauthors
+
+\end{tabu}
+
+\end{table}
+
+\sffamily \grouptutor
+\vfill
+\sffamily \Large \textcolor{white}{\placeanddate} \\
+
+
+% Guided By
+\vspace{0.5cm}
+\sffamily \Large \textbf{Guided By:} \\
+\sffamily \large Prof. C Krishna Mohan (IIT-Hyderabad) \\
+\vspace{0.5cm}
+\sffamily \Large \textbf{Teaching Assistant:} \\
+\sffamily \large Manan Darji (M.Tech IIT-Hyderabad)
+
+\end{titlepage}
+
+
+
+
+
+
+
+
